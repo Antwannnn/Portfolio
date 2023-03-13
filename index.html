@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur le site web personnel de Antoine Leboucher.
+    Vous trouverez ici toutes les informations relatives à mon parcours et ma vie professionnelle">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Antoine Leboucher</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#infos">Accueil</a></li>
+                <li><a href="#cursus">Formation</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="infos">
+            <div class="container">
+                <div class="left">
+                    <div class="wrapper">
+                        <div><h1 class="title">Antoine Leboucher</h1></div>
+                        <div><h3 class="title">Développeur Software et Web</h3></div>
+                        <a href="CV.pdf" download="CV">
+                            <button type="button" id="downloadbut" class="dlbtn"><i class="fa fa-download"></i>Télecharger mon CV</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img id="idphoto" src="Images/IMG-0565.jpg" alt="">
+                </div>
+            </div>
+            <p class="centered">Je m'appelle Antoine Leboucher et je suis développeur. <br>Je suis spécialisé dans le développement software
+                et plus spécifiquement dans le milieu du développement de jeux vidéo.<br> 
+                <button onclick="scrollToDiv('#cursus')" class="nextsection">Mon cursus</button>
+            </p>
+        </section>
+        
+        <section id="cursus">
+            <h1 class="titles">Mon cursus</h1>
+            <h2 class="centered">Frise chronologique de ma scolarité</h2>
+            <ul class="timeline">
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">IUT Blagnac - Toulouse</span>
+                            <span class="time-wrapper"><span class="time">2022 - Actuellement</span></span>
+                        </div>
+                        <div class="desc">Je suis actuellement à l'IUT de Blagnac, dans le département informatique</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Lycée Léo Ferré - Gourdon</span>
+                            <span class="time-wrapper"><span class="time">2019 - 2022</span></span>
+                        </div>
+                        <div class="desc">C'est dans cette école que j'ai fait l'intégralité de mon lycée et ai passé mon bac.</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">Collège Léo Ferré - Gourdon</span>
+                            <span class="time-wrapper"><span class="time">2017- 2019</span></span>
+                        </div>
+                        <div class="desc">C'est dans le collège Léo Ferré que j'ai fait la moitié de mon collège et ai passé mon brevet</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="flag">Collège Marie Curie - Paris</span>
+                            <span class="time-wrapper"><span class="time">2015 - 2017</span></span>
+                        </div>
+                        <div class="desc">C'est dans cet établissement que j'ai fait la première partie de mon collège</div>
+                    </div>
+                </li>     
+            </ul>
+            <div class="centered"><button onclick="scrollToDiv('#skills')" class="nextsection">Mes compétences</button></div>
+        </section>
+        
+        <section id="skills">
+            <h1 class="titles">Compétences</h1>
+            <h2 class="centered">Langages</h2>
+            <div class="container">
+                <div class="left">
+                    <p class="introtext">
+                        Depuis que j'ai commencé à m'intéresser à l'informatique, j'ai pu acquérir certaines compétences dans différents
+                        langages de programmation, que ce soit en langage Orientés Objet (OOP) ou en langage fonctionnels. J'ai également eu
+                        l'occasion d'apprendre tous les langages relatifs à la programmation web. 
+                        <br>
+                        <br>
+                        Etant avant tout un développeur de jeux-vidéo, j'ai surtout une très bonne maîtrise des langages Orientés Objet 
+                        et surtout spécialisés dans le développement de logiciels.
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="progressbars">
+                        C++<div class="pb" id="cpp"></div>
+                        Java<div class="pb" id="java"></div>
+                        HTML<div class="pb" id="html"></div>
+                        CSS<div class="pb" id="css"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="logos">
+                <img class="logo" src="Images/c-.png" alt="logo du c++">
+                <img class="logo" src="Images/java.png" alt="logo de java">
+                <img class="logo" src="Images/python.png" alt="logo de python">
+                <img class="logo" src="Images/html.png" alt="logo du html">
+                <img class="logo" src="Images/css-3.png" alt="logo du css">
+                <img class="logo" src="Images/js.png" alt="logo du javascript">
+            </div>
+            <h2 class="centered">Outils</h2>
+            <div class="container">
+                <div class="right">
+                    <div class="progressbars">
+                        Unreal Engine<div class="pb" id="ue"></div>
+                        IntelliJ<div class="pb" id="ij"></div>
+                        Visual Studio Code<div class="pb" id="vsc"></div>
+                    </div>
+                </div>
+                <div class="left">
+                    <p class="introtext">Grâce à ces langages de programmation, j'ai pu appredre à maîtriser différents outils me permettant
+                        d'accomplir différentes tâches allant d'un simple logiciel en lignes de commande avec <strong>IntelliJ</strong> 
+                        ou <strong>Visual Studio Code</strong> à 
+                        un jeu en 3D sous le moteur <strong>Unreal Engine</strong>.
+                    </p>
+                </div>
+            </div>
+            <div class="logos">
+                <img class="logo" src="Images/ue.png" alt="Logo de Unreal Engine">
+                <img class="logo" src="Images/ij.png" alt="Logo de IntelliJ">
+                <img class="logo" src="Images/vsc.png" alt="Logo de visual studio ide">
+            </div>
+        </section>
+        <section id="projects">
+            <h1 class="titles">Mes projets</h1>
+            <div class="personnal">
+                <h2 class="centered">Projets personnels</h2>
+                <div class="screenshots">
+                    <a href="https://github.com/Antwannnn/TheForgottenWords_SourceCode" target="_blank">
+                        <div class="content">
+                            <img src="Images/ue4cppcode.jpg" alt="">
+                            <div class="text">Prototype avancé de jeu d'horreur sous Unreal Engine en C++</div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Antwannnn/SimpleChatPlus-1.12-" target="_blank">
+                        <div class="content">
+                            <img src="Images/minecraftjavacode.jpg" alt="Capture d'écran du code du projet de plugin minecraft">
+                            <div class="text">Plugin Minecraft de gestion du chat développé en Java (Spigot)</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="nonflexcontainer">
+                    <h3 class="centered">Pour toute demande sur des projets personnels, me contacter sur mon discord. 
+                        <br>
+                        Vous pouvez copier mon identifiant via le bouton ci-dessous
+                    </h3>
+                    <button class="but" id="copyclipboard">Copier l'identifiant </button>
+                </div>
+                <div class="school">
+                    <h2 class="centered">Projets d'étude</h2>
+                    <div class="screenshots">
+                        <a href="https://github.com/Antwannnn/CourseCanoe" target="_blank">
+                            <div class="content">
+                                <img src="Images/canoe.jpg" alt="Capture d'écran du code du projet de canoë.">
+                                <div class="text">Projet de groupe de simulation de cours de canoë</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Antwannnn/Portfolio-Antoine-Leboucher" target="_blank">
+                            <div class="content">
+                                <img src="Images/portfolio.jpg" alt="Capture d'écran du code du projet de site web personnel">
+                                <div class="text">Projet individuel de conception d'un site web portfolio</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="titles">Me contacter</h1>
+            <div class="sform">
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Nom" />  
+                    <input name="firstname" type="text" class="feedback-input" placeholder="Prenom" /> 
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer"/>
+                </form>  
+            </div> 
+            <div class="socials">
+                <div class="logos">
+                    <a href="https://www.instagram.com/antwanlbr/" target="_blank"><img class="logo" src="Images/instagram.png" alt="Logo de instagram redirigeant vers mon compte instagram"></a>
+                    <a href="https://github.com/Antwannnn" target="_blank"><img class="logo" src="Images/github.png" alt="Logo de githun redirigeant vers mon compte githun"></a>
+                </div>
+            </div> 
+        </section> 
+    </main>
+    <footer>
+        <a href="ml.html"><h4 class="centered">© Tous droit réservés Antoine Leboucher - Mentions légales</h4></a>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
